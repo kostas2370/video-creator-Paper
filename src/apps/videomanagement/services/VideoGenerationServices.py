@@ -1,5 +1,5 @@
 from ..utils.download_utils import create_image_scenes, download_music
-from ..utils.prompt_utils import format_prompt, format_prompt_for_official_gpt
+from ..utils.prompt_utils import format_prompt
 from ..utils.gpt_utils import get_reply
 from ..utils.audio_utils import make_scenes_speech
 from ..utils.file_utils import generate_directory
