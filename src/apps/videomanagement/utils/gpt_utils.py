@@ -104,11 +104,10 @@ def get_reply(prompt, time=0, reply_format="json", gpt_model='gpt-4'):
 
         client = OpenAI(api_key = settings.OPEN_API_KEY)
 
-        stream = client.chat.completions.create(model = "gpt-4",
-                                                messages = [{"role": "assistant", "content": prompt[0]},
-                                                            {"role": "user", "content": prompt[1]}], stream = True,
+        stream = client.chat.completions.create(model = "gpt-4o",
+                                                messages = [{"role": "assistant", "content": prompt},
+                                                           ], stream = True,
                                                 max_tokens = settings.MAX_TOKENS)
-
         for chunk in stream:
             x.write(chunk.choices[0].delta.content or "")
 
