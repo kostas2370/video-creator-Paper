@@ -212,7 +212,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 
 GPT_OFFICIAL = False
-MAX_TOKENS = 2000
+MAX_TOKENS = 3900
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")    # Open AI api key
 
 
